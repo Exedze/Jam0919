@@ -6,6 +6,7 @@ public class movingWater : MonoBehaviour
     [SerializeField] private float startTime;
 
     [SerializeField] private float moveSpeed=1;
+    [SerializeField] private Sound _sfxWaves;
 
     private float tottime = 0;
 
@@ -16,6 +17,7 @@ public class movingWater : MonoBehaviour
     void Start()
     {
         startPos = transform.position;
+        _sfxWaves.Play();
     }
 
     // Update is called once per frame
@@ -27,12 +29,14 @@ public class movingWater : MonoBehaviour
             if((tottime - startTime) * moveSpeed>=1)
             {
                 transform.position = endPos;
+                _sfxWaves.Looping(false);
                 //done moving
             }
             else
             {
                 //moving
                 transform.position = Vector3.Lerp(startPos, endPos, (tottime - startTime) * moveSpeed);
+                _sfxWaves.Supdate("moveSpeed", (tottime - startTime) * moveSpeed);
             }
             
         }
