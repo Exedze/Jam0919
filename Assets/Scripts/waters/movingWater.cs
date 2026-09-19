@@ -17,7 +17,6 @@ public class movingWater : MonoBehaviour
     void Start()
     {
         startPos = transform.position;
-        _sfxWaves.Play();
     }
 
     // Update is called once per frame

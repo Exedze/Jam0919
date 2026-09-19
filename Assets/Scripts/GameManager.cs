@@ -7,12 +7,15 @@ public class GameManager : MonoBehaviour
     private Drowning playerDrowning;
 
     [SerializeField] private Sound music;
+    [SerializeField] private Sound _sfxWaves;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         
         music.Play();
         music.Looping(true);
+        _sfxWaves.Play();
+        _sfxWaves.Looping(true);
     }
 
     // Update is called once per frame
