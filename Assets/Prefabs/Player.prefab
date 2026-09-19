@@ -313,7 +313,7 @@ GameObject:
   - component: {fileID: 4548011479544919789}
   m_Layer: 0
   m_Name: head
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -349,7 +349,8 @@ MonoBehaviour:
   drowningCurrent: 0
   drowningMax: 20
   breatheInSpeed: 5
-  _sound: {fileID: 11400000, guid: de2bd122b4c419d429dde5dd71e41bce, type: 2}
+  _music: {fileID: 11400000, guid: de2bd122b4c419d429dde5dd71e41bce, type: 2}
+  _sfxDrowning: {fileID: 0}
 --- !u!58 &4548011479544919789
 CircleCollider2D:
   m_ObjectHideFlags: 0
