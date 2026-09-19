@@ -1,4 +1,5 @@
 using System;
+using FMOD.Studio;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -13,7 +14,8 @@ public class Drowning : MonoBehaviour
     private float drowningMax = 20;
     [SerializeField] private float breatheInSpeed=2;
     [FormerlySerializedAs("_sound")] [SerializeField] private Sound _music;
-    [SerializeField] private Sound _sfxDrowning;
+    //[SerializeField] private Sound _sfxDrowning;
+    [SerializeField] private Sound _sfxVO;
     
 
     public float DrowningProgress
@@ -60,7 +62,7 @@ public class Drowning : MonoBehaviour
     {
         if (!headInWater)
         {
-            
+            _sfxVO.Looping(false);
         }
 
         drowningCurrent += Time.deltaTime;
@@ -71,7 +73,9 @@ public class Drowning : MonoBehaviour
     {
         if (headInWater)
         {
-            
+            //_sfxDrowning.Play();
+            _sfxVO.Play();
+            _sfxVO.Looping(true);
         }
 
         drowningCurrent -= Time.deltaTime*breatheInSpeed;

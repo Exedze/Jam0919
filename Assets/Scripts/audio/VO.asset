@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1811868d3e561f041ac792bae763b72a, type: 3}
+  m_Name: VO
+  m_EditorClassIdentifier: Assembly-CSharp::Sound
+  paramName: 
+  soundName:
+    Guid:
+      Data1: -1955768617
+      Data2: 1151301133
+      Data3: 979088554
+      Data4: 1429153490
+    Path: event:/VO-breath
+  paramValue: 0
+  loop: 1
