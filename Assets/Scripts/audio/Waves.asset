@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1811868d3e561f041ac792bae763b72a, type: 3}
   m_Name: Waves
   m_EditorClassIdentifier: Assembly-CSharp::Sound
-  paramName: 
+  paramName: moveSpeed
   soundName:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  paramValue: 0
-  loop: 0
+      Data1: -16658483
+      Data2: 1274546628
+      Data3: 860145041
+      Data4: -936704645
+    Path: event:/AMB-waves
+  paramValue: 0.26472455
+  loop: 1
