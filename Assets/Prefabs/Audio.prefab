@@ -92,7 +92,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
+  CollisionTag: Player
   EventReference:
     Guid:
       Data1: 840543520
@@ -101,7 +101,7 @@ MonoBehaviour:
       Data4: -959584168
     Path: event:/AMB-heat
   Event: 
-  EventPlayTrigger: 9
+  EventPlayTrigger: 5
   EventStopTrigger: 2
   AllowFadeout: 1
   TriggerOnce: 0
@@ -125,10 +125,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 744a208c85da6d04c861d81b992e4ead, type: 3}
   m_Name: 
   m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioParameterTrigger
-  CollisionTag: 
+  CollisionTag: Player
   Emitters:
   - Target: {fileID: 7994867173850181415}
     Params:
     - Name: looping
       Value: 0
-  TriggerEvent: 10
+  TriggerEvent: 6
