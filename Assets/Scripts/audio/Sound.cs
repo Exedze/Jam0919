@@ -49,7 +49,10 @@ public class Sound : ScriptableObject
        }
 
        soundEvent.setParameterByName("looping", loop);
-       soundEvent.release();
+       if (loop == 0)
+       {
+           soundEvent.release();
+       }
    }
    
    
