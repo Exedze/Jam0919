@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class Drowning : MonoBehaviour
 {
@@ -11,7 +12,8 @@ public class Drowning : MonoBehaviour
     [SerializeField]
     private float drowningMax = 20;
     [SerializeField] private float breatheInSpeed=2;
-    [SerializeField] private Sound _sound;
+    [FormerlySerializedAs("_sound")] [SerializeField] private Sound _music;
+    [SerializeField] private Sound _sfxDrowning;
     
 
     public float DrowningProgress
@@ -34,7 +36,7 @@ public class Drowning : MonoBehaviour
             ExitWater();
         } 
         // fmod pass (DrowningProgress*100)
-        _sound.Supdate("Track",DrowningProgress*100);
+        _music.Supdate("Track",DrowningProgress*100);
         
     }
 
