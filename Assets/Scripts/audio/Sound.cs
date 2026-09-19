@@ -16,6 +16,10 @@ public class Sound : ScriptableObject
 
    private void Awake()
    {
+       if (soundName.IsNull)
+       {
+           Debug.Log("Sound ref is Null");
+       }
        soundEvent = RuntimeManager.CreateInstance(soundName);
    }
    
