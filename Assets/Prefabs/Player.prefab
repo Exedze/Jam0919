@@ -352,6 +352,7 @@ MonoBehaviour:
   _music: {fileID: 11400000, guid: de2bd122b4c419d429dde5dd71e41bce, type: 2}
   _sfxTime: {fileID: 11400000, guid: 7a9cab7eeb40bf448b654c423cd7d83c, type: 2}
   _sfxVO: {fileID: 11400000, guid: 042e5890846ac9b4eab592babe2cd066, type: 2}
+  _sfxMuffle: {fileID: 11400000, guid: 1186c455dddb9684ba0cf0304d046d64, type: 2}
 --- !u!58 &4548011479544919789
 CircleCollider2D:
   m_ObjectHideFlags: 0

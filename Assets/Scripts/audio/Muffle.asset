@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1811868d3e561f041ac792bae763b72a, type: 3}
-  m_Name: Time
+  m_Name: Muffle
   m_EditorClassIdentifier: Assembly-CSharp::Sound
   paramName: 
   soundName:
     Guid:
-      Data1: 1188981811
-      Data2: 1107400797
-      Data3: 1926437769
-      Data4: 2128782738
-    Path: event:/AMB-time
+      Data1: -541785354
+      Data2: 1181080056
+      Data3: -1638355544
+      Data4: 715013971
+    Path: event:/Muffle
   paramValue: 0
   loop: 0

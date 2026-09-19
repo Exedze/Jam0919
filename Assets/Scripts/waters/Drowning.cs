@@ -16,6 +16,7 @@ public class Drowning : MonoBehaviour
     [FormerlySerializedAs("_sound")] [SerializeField] private Sound _music;
     [SerializeField] private Sound _sfxTime;
     [SerializeField] private Sound _sfxVO;
+    [SerializeField] private Sound _sfxMuffle;
     private bool isdrowning;
     
 
@@ -43,14 +44,15 @@ public class Drowning : MonoBehaviour
         if (DrowningProgress >= 1f)
         {
             _sfxTime.Looping(false);
+            _sfxMuffle.Stop();
         }
         if (DrowningProgress >= 0.5f)
         {
             if(!isdrowning)
             {
                 _sfxTime.Play();
-                              _sfxVO.Looping(true);
-                              isdrowning = true;
+                _sfxVO.Looping(true); 
+                isdrowning = true;
             }
             
         }
@@ -60,6 +62,24 @@ public class Drowning : MonoBehaviour
             {
                 isdrowning = false;
                 _sfxTime.Looping(false);
+            }
+        }
+        if (DrowningProgress >= 0.8f)
+        {
+            if(!isdrowning)
+            {
+                _sfxMuffle.Play();
+                _sfxMuffle.Looping(true); 
+                isdrowning = true;
+            }
+            
+        }
+        else
+        {
+            if (isdrowning)
+            {
+                isdrowning = false;
+                _sfxMuffle.Looping(false);
             }
         }
         
