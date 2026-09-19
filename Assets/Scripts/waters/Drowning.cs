@@ -11,6 +11,8 @@ public class Drowning : MonoBehaviour
     [SerializeField]
     private float drowningMax = 20;
     [SerializeField] private float breatheInSpeed=2;
+    [SerializeField] private Sound _sound;
+    
 
     public float DrowningProgress
     {
@@ -32,6 +34,8 @@ public class Drowning : MonoBehaviour
             ExitWater();
         } 
         // fmod pass (DrowningProgress*100)
+        _sound.Supdate("Track",DrowningProgress*100);
+        
     }
 
     private void OnTriggerEnter2D(Collider2D col)

@@ -1,0 +1,56 @@
+using System;
+using FMOD.Studio;
+using UnityEngine;
+using FMODUnity;
+using JetBrains.Annotations;
+using UnityEditor;
+
+[CreateAssetMenu(menuName ="Sound")]
+public class Sound : ScriptableObject
+{
+   [SerializeField] private string paramName;
+   [SerializeField] private EventReference soundName;
+   [SerializeField] private float paramValue;
+   [SerializeField] private float loop;
+   private EventInstance soundEvent;
+
+   private void Awake()
+   {
+       soundEvent = RuntimeManager.CreateInstance(soundName);
+   }
+   
+   public void Stop()
+   {
+       soundEvent.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+       soundEvent.release();
+   }
+   public void Play()
+   {
+       soundEvent = RuntimeManager.CreateInstance(soundName);
+       soundEvent.start();
+   }
+   
+   public void Supdate(string param, float value)
+   {
+       paramName = param;
+       paramValue = value;
+       soundEvent.setParameterByName(paramName, paramValue);
+   }
+
+  public void Looping(bool value)
+   {
+       if (value == true)
+       {
+           loop = 1;
+       }
+       else
+       {
+           loop = 0;
+       }
+
+       soundEvent.setParameterByName("looping", loop);
+       soundEvent.release();
+   }
+   
+   
+}
