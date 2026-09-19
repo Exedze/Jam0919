@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6464000324473709093}
   - component: {fileID: 6166445278563643325}
+  - component: {fileID: 7234897976021908340}
   - component: {fileID: 7462252444190878700}
   - component: {fileID: 5508226940506252886}
   - component: {fileID: 7887360393140390132}
@@ -51,6 +52,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMove
   delta: {x: 0, y: 0, z: 0}
   prevcord: {x: 0, y: 0, z: 0}
+  body: {fileID: 5508226940506252886}
+--- !u!114 &7234897976021908340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 79044372990874011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5ecf21e12595d24e9917c96fe903b4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WaterCheck
+  inWater: 0
   body: {fileID: 5508226940506252886}
 --- !u!212 &7462252444190878700
 SpriteRenderer:
