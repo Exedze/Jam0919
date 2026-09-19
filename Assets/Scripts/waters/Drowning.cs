@@ -30,7 +30,8 @@ public class Drowning : MonoBehaviour
         else
         {
             ExitWater();
-        }
+        } 
+        // fmod pass (DrowningProgress*100)
     }
 
     private void OnTriggerEnter2D(Collider2D col)
