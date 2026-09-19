@@ -8,7 +8,8 @@ using UnityEditor;
 [CreateAssetMenu(menuName ="Sound")]
 public class Sound : ScriptableObject
 {
-   [SerializeField] private string paramName;
+    [SerializeField] private string paramName;
+   [SerializeField] private string paramName2;
    [SerializeField] private EventReference soundName;
    [SerializeField] private float paramValue;
    [SerializeField] private float loop;
@@ -38,6 +39,12 @@ public class Sound : ScriptableObject
    public void Supdate(string param, float value)
    {
        paramName = param;
+       paramValue = value;
+       soundEvent.setParameterByName(paramName, paramValue);
+   }public void Supdate(string param, float value, string param2, float value2)
+   {
+       paramName = param;
+       paramName = param2;
        paramValue = value;
        soundEvent.setParameterByName(paramName, paramValue);
    }
