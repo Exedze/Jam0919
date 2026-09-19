@@ -101,7 +101,7 @@ MonoBehaviour:
       Data4: -959584168
     Path: event:/AMB-heat
   Event: 
-  EventPlayTrigger: 9
+  EventPlayTrigger: 5
   EventStopTrigger: 2
   AllowFadeout: 1
   TriggerOnce: 0
@@ -131,4 +131,4 @@ MonoBehaviour:
     Params:
     - Name: looping
       Value: 0
-  TriggerEvent: 10
+  TriggerEvent: 6
