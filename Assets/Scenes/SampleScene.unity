@@ -303,6 +303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   playerDrowning: {fileID: 839279902}
+  music: {fileID: 11400000, guid: de2bd122b4c419d429dde5dd71e41bce, type: 2}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
