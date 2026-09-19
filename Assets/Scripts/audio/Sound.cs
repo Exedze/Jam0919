@@ -14,14 +14,15 @@ public class Sound : ScriptableObject
    [SerializeField] private float loop;
    private EventInstance soundEvent;
 
-   private void Awake()
+   /*private void Awake()
    {
        if (soundName.IsNull)
        {
            Debug.Log("Sound ref is Null");
        }
-       soundEvent = RuntimeManager.CreateInstance(soundName);
-   }
+       soundEvent = FMOD.Studio.
+           CreateInstance(soundName);
+   }*/
    
    public void Stop()
    {
