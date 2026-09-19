@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6464000324473709093}
   - component: {fileID: 6166445278563643325}
-  - component: {fileID: 5312931048677588356}
   - component: {fileID: 7462252444190878700}
   - component: {fileID: 5508226940506252886}
   - component: {fileID: 7887360393140390132}
@@ -55,22 +54,6 @@ MonoBehaviour:
   delta: {x: 0, y: 0, z: 0}
   prevcord: {x: 0, y: 0, z: 0}
   body: {fileID: 5508226940506252886}
---- !u!114 &5312931048677588356
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 79044372990874011}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fbbafe031bde4a46bbbbd8a4b0a5405, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Drowning
-  headInWater: 0
-  drowningCurrent: 0
-  drowningMax: 20
-  breatheInSpeed: 2
 --- !u!212 &7462252444190878700
 SpriteRenderer:
   serializedVersion: 3
