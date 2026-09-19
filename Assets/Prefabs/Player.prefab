@@ -350,7 +350,7 @@ MonoBehaviour:
   drowningMax: 20
   breatheInSpeed: 5
   _music: {fileID: 11400000, guid: de2bd122b4c419d429dde5dd71e41bce, type: 2}
-  _sfxDrowning: {fileID: 0}
+  _sfxTime: {fileID: 11400000, guid: 7a9cab7eeb40bf448b654c423cd7d83c, type: 2}
   _sfxVO: {fileID: 11400000, guid: 042e5890846ac9b4eab592babe2cd066, type: 2}
 --- !u!58 &4548011479544919789
 CircleCollider2D:
