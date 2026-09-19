@@ -18,6 +18,7 @@ public class Drowning : MonoBehaviour
     [SerializeField] private Sound _sfxVO;
     [SerializeField] private Sound _sfxMuffle;
     private bool isdrowning;
+    private bool isdrowning2;
     
 
     public float DrowningProgress
@@ -66,19 +67,19 @@ public class Drowning : MonoBehaviour
         }
         if (DrowningProgress >= 0.8f)
         {
-            if(!isdrowning)
+            if(!isdrowning2)
             {
                 _sfxMuffle.Play();
                 _sfxMuffle.Looping(true); 
-                isdrowning = true;
+                isdrowning2 = true;
             }
             
         }
         else
         {
-            if (isdrowning)
+            if (isdrowning2)
             {
-                isdrowning = false;
+                isdrowning2 = false;
                 _sfxMuffle.Looping(false);
             }
         }
@@ -117,7 +118,6 @@ public class Drowning : MonoBehaviour
     {
         if (headInWater)
         {
-            _sfxVO.Looping(true);
             _sfxVO.Play();
             _sfxVO.Looping(true);
         }
